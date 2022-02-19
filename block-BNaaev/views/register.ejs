@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sign up</title>
+</head>
+<body>
+    <header class="flex justify-between align-center px-2 py-2 bg-gray-300 ">
+        <a class="" href="/user/welcome">
+            <h1 class="font-bold"><span class="uppercase text-2xl font-bold">User</span>r</h1>
+        </a>
+        <nav>
+            <ul class="flex justify-between align-center">
+                <li class="mx-2 bg-sky-700 px-2 py-1"><a class="font-semibold text-white" href="/user/signin">Sign In</a></li>
+                <li class="mx-2 bg-sky-700 px-2 py-1"><a class="font-semibold text-white" href="/user/signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="font-bold text-2xl text-center my-2">Create Account</h2>
+        <form action="/user/signup" method="POST" class="px-2 border border-slate-200 mt-6">
+            <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-96 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm my-2" type="text" name="name" id="name" placeholder="enter name">
+            <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-96 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm my-2"  type="text" name="email" id="email" placeholder="enter email">
+            <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-96 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm my-2"  type="password" name="password" id="password" placeholder="enter password">
+            <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-96 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm my-2"  type="number" name="age" id="age" default="0">
+            <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-96 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm my-2"  type="tel" name="phoneNum" id="phoneNum" placeholder="enter phone number">
+            <button class="rounded-none bg-sky-700 text-white px-2 py-1 mt-2" type="submit">Create Account</button>
+        </form>
+    </main>
+</body>
+</html>
