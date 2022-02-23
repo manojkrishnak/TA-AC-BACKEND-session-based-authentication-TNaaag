@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        p{
+            margin: 2rem 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <% if(error){ %>
+        <p><%= error %></p>
+    <% } %>
+    <form action="/user/login" method="POST">
+        <input type="email" name="email" id="email" placeholder="enter email">
+        <input type="password" name="password" id="password" placeholder="enter password">
+        <button type="submit">submit</button>
+    </form>
+    <p>If you don't have an account, <a href="/user/register">Sign up</a></p>
+</body>
+</html>
